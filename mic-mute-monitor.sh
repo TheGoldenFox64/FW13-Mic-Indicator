@@ -28,8 +28,6 @@ function LightSet() {
 
 #resets when ctrl+c is used
 function reset() {
-    sudo fw-ectool led left off
-    sudo fw-ectool led right off
     sudo fw-ectool led power white
     exit
 }
