@@ -14,6 +14,7 @@ Make sure you have amixer and fw-ectool installed, then run
 ```bash
 git clone https://github.com/TheGoldenFox64/FW13-Mic-Indicator
 cd FW13-Mic-Indicator
+sudo chmod +x ./install.sh
 ./install.sh
 ```
 Be sure to start and/or enable `micmonitor.service`
