@@ -6,22 +6,20 @@ This script makes the power button turn red when the microphone is muted, and wh
 
 ## Requirements
 
-**Packages:** amixer, fw-ectool-git
+**Packages:** amixer, fw-ectool(name may vary based on distro or PM, fw-ectool-git on AUR)
 
 **Files:** mic-mute-monitor.sh, micmonitor.service
 
 
 ## Installation
 
-Manual install until i figure out git and stuff
-
+Make sure you have amixer and fw-ectool installed, then run
 ```bash
-  1. get the 2 files and 2 packages
-  2. put mic-mute-monitor.sh in /usr/local/sbin
-  3. make mic-mute-monitor.sh executable
-  4. put micmonitor.service in /etc/systemd/system/
-  5. enable and start micmonitor.service
+git clone https://github.com/TheGoldenFox64/FW13-Mic-Indicator
+cd FW13-Mic-Indicator
+./install.sh
 ```
+Be sure to start and/or enable `micmonitor.service`
 Try muting your mic, if all is working then the light should turn red, and turn off when unmuted or the service stopped.
 ## Authors
 
