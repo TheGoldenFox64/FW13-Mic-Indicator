@@ -1,0 +1,8 @@
+[Unit]
+Description=Sets the FW13 power button to either red or white based on if the mic is muted or not
+
+[Service]
+ExecStart=/bin/bash /usr/local/sbin/mic-mute-monitor.sh
+
+[Install]
+WantedBy=multi-user.target
