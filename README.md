@@ -20,6 +20,9 @@ sudo chmod +x ./install.sh
 Be sure to start and/or enable `micmonitor.service`
 
 Try muting your mic, if all is working then the light should turn red, and turn off when unmuted or the service stopped.
+
+## Troubleshooting
+the script is set to card 1. make sure you are muting card 1, or go into the script file in `/usr/local/sbin/mic-mute-monitor.sh` and change `amixer -c 1` to whatever number your card is. you can find your card number with `arecord -l`
 ## Authors
 
 - [MY GAY ASS](ko-fi.com/thegoldenfox64)
